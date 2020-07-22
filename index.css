@@ -1,0 +1,32 @@
+.themed-grid-col {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: rgba(86, 61, 124, .15);
+
+    border: 1px solid rgba(86, 61, 124, .2);
+}
+
+.themed-container-top {
+    padding: 15px;
+    margin-bottom: 30px;
+    background-color: rgba(0, 123, 255, .15);
+    background-image: url("beach.jpg");
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 1px solid rgba(0, 123, 255, .2);
+}
+
+.col-centered {
+    float: none;
+    margin-right: auto;
+    margin-left: auto;
+}
+.container{
+    max-width: 1024px;
+    background-image: url("beach.jpg");
+}
