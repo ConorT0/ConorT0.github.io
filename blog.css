@@ -1,0 +1,7 @@
+.themed-grid-col {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: rgba(209, 232, 226, 0.1);
+
+    /*border: 1px solid rgba(206, 206, 206, .2);*/
+}
