@@ -14,18 +14,93 @@
 <div class="container-fluid">
     <div class="row justify-content-md-center">
         <div class="col-md-8 themed-grid-col">
-            <h1>AI Project- Maze Generator</h1>
+            <h1 class="text-center">AI Project- Maze Generator</h1>
             <p>
+                All of my favorite projects involve visuals that can allow anyone to get a high level understanding of
+                what is going on. In my AI class, one of my projects involved working with mazes and using search 
+                algorithms on them. I worked in a group with two other people. Here you can see how different algorithms
+                found different paths through randomly generated mazes.
 
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tortor sapien, lobortis eu tincidunt convallis, molestie ac orci. Duis sed risus at odio malesuada pulvinar. Pellentesque interdum a risus in dapibus. Aliquam hendrerit, metus nec mattis ultricies, augue libero viverra velit, sed faucibus nibh neque pretium arcu. Donec eget porttitor sem. Aenean venenatis maximus augue varius auctor. Maecenas vestibulum interdum metus sit amet sollicitudin. Nulla facilisi. Suspendisse nec risus gravida, sollicitudin odio nec, euismod mauris. Pellentesque et tellus ut erat aliquam volutpat eget maximus enim. Sed semper aliquet congue.
+            </p>
+        </div>
+    </div>
+    <div class="row justify-content-md-center">
+        <div class="col-md-4 themed-grid-col">
+            <img src="assetsMaze/bfs.png" class=" mx-auto d-block img-fluid">
+            <figcaption><p class="text-center">Breadth First Search</p></figcaption>
+        </div>
+        <div class="col-md-4 themed-grid-col">
+            <img src="assetsMaze/dfs.png" class=" mx-auto d-block img-fluid">
+            <figcaption><p class="text-center">Depth First Search</p></figcaption>
+        </div>
+    </div>
+    <div class="row justify-content-md-center">
+        <div class="col-md-8 themed-grid-col">
+            <p>
+                Above you can see the classic breadth first search and depth first search algorithms, ran on the same graph. This is really nothing special, but are useful for comparing with other algorithms.
 
-                Suspendisse vel mattis neque, maximus vulputate diam. Sed hendrerit maximus arcu vel aliquam. Pellentesque egestas odio id lobortis maximus. Phasellus sed lectus id leo laoreet venenatis. Phasellus a elit porta, volutpat risus sed, scelerisque diam. Vestibulum consequat, turpis id lobortis bibendum, felis arcu bibendum risus, tincidunt interdum velit ante eu mi. Donec blandit quam in lectus facilisis posuere.
+            </p>
+        </div>
+    </div>
 
-                Aliquam at euismod diam. Aenean sit amet purus et diam rhoncus facilisis. Ut rhoncus sed turpis eget tristique. Cras fringilla nibh justo, in feugiat tortor congue lacinia. Cras hendrerit diam at sem fringilla dapibus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Aenean lobortis mollis elit, vel iaculis turpis euismod auctor. Proin aliquam ultricies nisl non blandit.
+    <div class="row justify-content-md-center">
+        <div class="col-md-4 themed-grid-col">
+            <img src="assetsMaze/astareuclid.png" class=" mx-auto d-block img-fluid">
+            <figcaption><p class="text-center">Informed Search using Euclidean distance</p></figcaption>
+        </div>
+        <div class="col-md-4 themed-grid-col">
+            <img src="assetsMaze/astarmanhattan.png" class=" mx-auto d-block img-fluid">
+            <figcaption><p class="text-center">Informed Search using Manhattan distance</p></figcaption>
+        </div>
+    </div>
+    <div class="row justify-content-md-center">
+        <div class="col-md-8 themed-grid-col">
+            <p>
+                These results are prime examples of the usefulness of a good visual. Both of the algorithms are informed
+                searches, meaning that they pick their next move based off of the shortest distance, but they do so in
+                different ways.
+            </p>
+        </div>
+    </div>
+    <div class="row justify-content-md-center">
+        <div class="col-md-8 themed-grid-col">
+            <img src="assetsMaze/Manhattan_distance.svg" class=" mx-auto d-block img-fluid">
+            <figcaption><p class="text-center">Green- Euclidan distance<br> Red, Blue and Yellow- Manhattan distance<br>
+                                                <a href="https://en.wikipedia.org/wiki/Taxicab_geometry">Image Source</a>
+            </p></figcaption>
+        </div>
+    </div>
+    <div class="row justify-content-md-center">
+        <div class="col-md-8 themed-grid-col">
+            <p>
+                The green line is Euclidean distance, it is the most direct path that assumes you can move in any direction.
+                While this is not accurate for the maze, when the algorithm used euclidean distance the path it followed
+                was as close to a diagonal line as possible.
+                Meanwhile, Manhattan distance assumes you can only move in the four cardinal directions. This caused the
+                algorithm to follow a less direct path, something akin to the yellow line in the image above.
+                <br><br>Another part of the project involved creating the hardest possible graph for a given search algorithm, by some measure of "difficulty". I used a search algorithm that experimented with inverting cells,
+                called beam search to make the hardest possible graph for the depth first search algorithm. I ended up getting some great visuals out of it, with the graph getting harder and harder for DFS.
 
-                Vestibulum venenatis fermentum urna. Sed a metus diam. Suspendisse id tempor ante. Cras eget eros ante. Praesent rutrum ex et velit semper, ut porttitor augue dignissim. Sed vulputate ligula quam, sit amet laoreet quam sagittis vel. Pellentesque non orci congue, luctus augue sed, varius quam. Nulla facilisi. Etiam libero urna, faucibus ut egestas ac, gravida nec metus. Nullam pellentesque at dui ac pharetra. Curabitur eget metus non turpis ullamcorper varius ut nec justo. Phasellus venenatis auctor erat, eget gravida magna dictum sed.
+            </p>
+        </div>
+    </div>
+    <div class="row justify-content-md-center">
+        <div class="col-md-4 themed-grid-col">
+            <img src="CxLq6W7.gif" class=" mx-auto d-block img-fluid">
+        </div>
+        <div class="col-md-4 themed-grid-col">
+            <img src="3pb6sj.gif" class=" mx-auto d-block img-fluid">
+        </div>
+    </div>
+    <div class="row justify-content-md-center">
+        <div class="col-md-8 themed-grid-col">
+            <p>
+                I really like these images. We can see the maze getting harder and harder to solve, as the computer
+                places blocks to better and better exploit the fact that our implementation of depth first search
+                prioritizes going right, then down, then left, and lastly up.
+                The path curves to and fro, and makes use of the pre-existing walls that the graph started with.
 
-                Quisque turpis velit, dignissim ut tortor at, interdum mattis mi. Integer ullamcorper nunc in diam finibus, non elementum mauris faucibus. Donec mattis id justo in gravida. Aenean eleifend justo mattis facilisis cursus. Cras nec urna non quam porta gravida in in lorem. Sed venenatis vel felis sed viverra. Sed tempor, urna id bibendum sagittis, eros mi gravida urna, a facilisis arcu nisl in orci. Pellentesque ac leo ac ligula facilisis varius. Aenean sit amet nisl at nisl volutpat elementum. Cras imperdiet orci sed eros rutrum lobortis. Sed consectetur auctor blandit. Nunc dapibus rhoncus ullamcorper. Nulla tincidunt lectus non justo sollicitudin sollicitudin. Proin at elementum ex, vitae efficitur ex. Etiam tristique at est sit amet tincidunt. </p>
+            </p>
         </div>
     </div>
 </div>
