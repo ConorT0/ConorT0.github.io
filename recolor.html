@@ -10,14 +10,22 @@
 
 </head>
 <body>
+<nav class="site-header py-1">
+    <div class="container d-flex flex-column flex-md-row justify-content-between">
+
+        <a style="color: rgba(209,232,206,1.0);" class="py-2 d-none d-md-inline-block" href="index.html">Back to Home</a>
+
+
+    </div>
+</nav>
 <h1 class="text-center">AI Project- Image Recoloring</h1>
 <div class="container-fluid">
     <div class="row justify-content-md-center">
         <div class="col-md-4 themed-grid-col">
 
             <p>
-                An interesting project I worked on in my AI class is coloring photos. We worked on coloring this photo of
-                a beach to the left.
+                An interesting project I worked on in my AI class is algorithmically recoloring photos. We worked on coloring this photo of
+                a beach to the right.
             </p>
         </div>
         <div class="col-md-4 themed-grid-col">
@@ -25,15 +33,6 @@
         </div>
     </div>
     <div class="row justify-content-md-center">
-        <div class="col-md-8 themed-grid-col">
-            <p>
-                In order to makes things simpler, as this was our first project involving photos, we reduced the space
-                of colors we were dealing with from over 16 millions with regular RGB down to the 5 most common colors.
-                To find these five most common colors, we used a method called K means clustering.
-
-            </p>
-        </div>
-    </div><div class="row justify-content-md-center">
     <div class="col-md-4 themed-grid-col">
         <img src="assetsRecolor/K-means_convergence.gif" class=" mx-auto d-block img-fluid">
         <figcaption><p class="text-center">Visual by <a href="//commons.wikimedia.org/wiki/User:Chire" title="User:Chire">Chire</a> - <span class="int-own-work" lang="en">Own work</span>, <a href="https://creativecommons.org/licenses/by-sa/4.0" title="Creative Commons Attribution-Share Alike 4.0">CC BY-SA 4.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=59409335">Link</a> Thanks Chire!</p></figcaption>
@@ -60,8 +59,7 @@
             <p>
                 Here we can see the results of this process! I would say this is not too bad for having so few colors.
                 <br><br>
-                Now the program is ready to color the image. The program needs a reference for what greyscale pixels
-                usually correspond to what color, so the recolored image we just created can be used for that purpose.
+                Now the program is ready to color the image. When deciding on what color to use for a given pixel, the program will use this simplified reference image.
                 In order to color a given pixel, the computer has to look at more than just the greyscale value of one pixel as one value is simply too little data to go off of.
                 To get a better idea of what that pixel might be, it can look at a small patch surrounding the pixel.
                 These "pixel patches" can be thought of as a simple vector of values. We can then look at our reference
@@ -77,6 +75,7 @@
     <div class="row justify-content-md-center">
         <div class="col-md-8 themed-grid-col">
             <img src="assetsRecolor/beach%20recolored.jpeg" class=" mx-auto d-block img-fluid">
+            <figcaption><p class="text-center">Left - Reference Colors | Right - Recolored Black and White Photo</p> </figcaption>
         </div>
     </div>
     <div class="row justify-content-md-center">

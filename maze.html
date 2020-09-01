@@ -10,15 +10,23 @@
 
 </head>
 <body>
+<nav class="site-header py-1">
+    <div class="container d-flex flex-column flex-md-row justify-content-between">
+
+        <a style="color: rgba(209,232,206,1.0);" class="py-2 d-none d-md-inline-block" href="index.html">Back to Home</a>
+
+
+    </div>
+</nav>
 <h1 class="text-center">AI Project- Maze Generator</h1>
 <div class="container-fluid">
     <div class="row justify-content-md-center">
         <div class="col-md-8 themed-grid-col">
 
             <p>
-                The projects I enjoy most all involve visuals that can allow anyone to get a high level understanding of
-                what is going on.  An example is my maze project, which I worked with a team of two others to create in my AI class.
-                It involved working with mazes and using different types of search algorithms to solve them.
+                The projects I enjoy most all involve visuals that anyone can easily understand from a high level viewpoint.
+                An example is this maze project, which I worked with a team of two others to create in my AI class.
+                This project involved working with mazes and using different types of search algorithms to solve them.
                 My team showed how different algorithms found different paths through randomly generated mazes.
                 The project also dealt with making mazes more difficult in an algorithmic way.
 
@@ -38,7 +46,7 @@
     <div class="row justify-content-md-center">
         <div class="col-md-8 themed-grid-col">
             <p>
-                Above, see the classic breadth first search and depth first search algorithms, ran on the same graph. Although not earth shattering, they are useful for comparing with other algorithms.
+                Above, note the classic breadth first search and depth first search algorithms, ran on the same graph. Although not earth shattering, they are useful for comparison with other algorithms.
             </p>
         </div>
     </div>
@@ -56,7 +64,7 @@
     <div class="row justify-content-md-center">
         <div class="col-md-8 themed-grid-col">
             <p>
-                These results are prime examples of the usefulness of a good visual. Both of the algorithms are informed
+                These results are prime examples of the usefulness of a good visualization. Both of the algorithms are informed
                 searches, meaning that they pick their next move based off of the shortest distance. However they do so in
                 alternate ways. Both of these algorithms calculate what the distance to the finish would be if they moved in
                 any of the four possible directions. They then choose the direction with the lowest distance, and keeps track of
@@ -76,7 +84,7 @@
     <div class="row justify-content-md-center">
         <div class="col-md-8 themed-grid-col">
             <p>
-                The image above shows a few ways the agent could calculate distance. Something to note that is hard to see
+                The image above shows a few ways the agent could calculate distance. Something to note, that is hard to see,
                 is that all paths are the same length. But the reason why the agent discovered two equal but different paths can be learned
                 when we take a closer look at the method used to calculate the distances.
                 One method is to use a naive approach, and simply
@@ -91,7 +99,7 @@
                 However, it highlights the difference between the two ways of measuring distance.
                 <br><br>Another part of the project involved creating the hardest possible graph for a given search algorithm, by some measure of "difficulty". I used a search algorithm called beam search that experimented with inverting cells,
                 and incrementally made the graph harder and harder for a given search algorithm. In the two examples below, the algorithm searched for graphs that would be difficult for depth first search.
-                This resulted in intersting visuals, where the graph gets more and more complex over time.
+                This resulted in interesting visuals, where the graph gets more and more complex over time.
 
             </p>
         </div>

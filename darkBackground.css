@@ -8,3 +8,7 @@ a{
 a:hover{
     color: #a58665;
 }
+.site-header{
+    background-color: rgba(17,100,102,1.0);
+    color: rgba(209,232,206,1.0);
+}
